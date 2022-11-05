@@ -1,0 +1,58 @@
+button {
+    background-color: #c00;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    /*CSS Margenes*/
+    margin-right: 6px;
+    font-weight: 500;
+}
+
+.join-b {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    border-style: solid;
+    font-weight: 500;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color 1s,
+    color 1s;
+    width: 70px;
+}
+
+.join-b:hover {
+    background-color: blue;
+    color: white;
+}
+
+.join-b:active {
+    opacity: 0.5;
+}
+
+.tweet-button {
+    background-color: #4ba2f5;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    /*Transiciones seleccionando estilos hover*/
+    transition: opacity 0.5s,
+    box-shadow 0.5s;
+}
+.tweet-button:hover {
+    opacity: 0.8;
+    /*Sombras CSS*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.185);
+}
+
+.tweet-button:active {
+    opacity: 0.5;
+}

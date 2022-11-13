@@ -37,6 +37,130 @@
                 white-space: pre;
             }
 
+            .ejercicio-4 {
+                display: inline-block;
+
+            }
+
+            .seccion-arriba {
+                display: block;
+            }
+
+            .seccion-arriba-texto {
+                display: inline-block;
+                width: 90%;
+                margin: 0;
+                margin-right: -10px;
+            }
+
+            .texto1-ej4 {
+                font-size: 15px;
+                width: 100%;
+                font-family: Arial;
+                margin: 0;
+                margin-top: 1px;
+            }
+
+            .texto2-ej4 {
+                font-size: 15px;
+                text-align: center;
+                font-family: Arial;
+            }
+
+            .seccion-arriba-foto {
+                width: 9%;
+                margin-top: 10px;
+                margin-left: -100px;
+                display: inline-block;
+            }
+
+            .seccion-abajo-texto {
+                display: inline-block;
+                width: 72%;
+                vertical-align: top;
+            }
+
+            .seccion-abajo-texto p {
+                margin: 0;
+                margin-left: 15px;
+            }
+
+            .seccion-abajo-foto {
+                width: 20%;
+                display: inline-block;
+            }
+
+            .div-footer {
+                clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+                background-color: grey;
+                width: 1000px;
+                height: 200px;
+            }
+
+            .footerdiv2 button {
+                margin-left: 13px;
+            }
+
+            .footerdiv1 {
+                margin-left: 50px;
+            }
+
+            .footerdiv2 {
+                margin-left: 60px;
+            }
+
+            .titulo {
+                color: white;
+                font-weight: bold;
+                font-family: Verdana;
+            }
+
+            .subtitulo {
+                color: white;
+                font-family: Verdana;
+            }
+            
+            .footerdiv2 button {
+                cursor: pointer;
+            }
+
+            .css-grid {
+                padding-top: 10px;
+            }
+
+            .div-footer2 {
+                background-color:beige;
+                width: 1000px;
+                height: 50px;
+            }
+
+            .div-footer2 a {
+                float: right;
+                margin-top: 4px;
+                margin-right: 38px;
+            }
+
+            .aviso-legal {
+                color: grey;
+                font-family: Verdana;
+                text-decoration: none;
+            }
+
+            .privacidad-cookies {
+                color: grey;
+                font-family: Verdana;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+
+            .aviso-legal:hover {
+                opacity: 0.8;
+            }
+
+            .privacidad-cookies:hover {
+                opacity: 0.8;
+            }
+
         </style>
     </head>
     <body>
@@ -61,9 +185,96 @@
         <br>
         <br>
 
-        <p id="ejercicio3">En el momento en que <span style="color:#8ec68e; text-decoration: underline;">entiendo verdaderamente</span> a mi <span style="color: red;">enemigo</span>, en el momento en que le <span style="text-decoration: underline overline;">entiendo</span> lo
+        <p id="ejercicio3">En el momento en que <span style="color:#8ec68e; text-decoration: underline;">entiendo verdaderamente</span> a mi <span style="color: red; font-weight: bold;">enemigo</span>, en el momento en que le <span style="text-decoration: underline overline;">entiendo</span> lo
 suficientemente bien como para <span style="font-size: 35px; font-weight: bold">derrotarle</span>, entonces, en es preciso instante
 <span style="line-height: 2.8;"><span style="color: blue; font-weight: bold;">tambien le</span> <span style="color: red; font-weight: bold; text-decoration: underline;">quiero</span></span>
         </p>
+
+        <br>
+        <br>
+
+        <div  style="width: 800px;" class="ejercicio-4">
+            <div class="seccion-arriba">
+                <div class="seccion-arriba-texto">
+                    <p class="texto1-ej4">En el momento en que entiendo verdaderamente a mi enemigo,en el momento en que le<br>
+                    entiendo lo suficientemente bien como para derrotarle, entonces, en ese preciso<br>
+                    instante, también le quiero. Creo que es imposible entender realmente a alguien, saber<br>
+                    lo que quiere, saber lo que cree, y no amarle como se ama a si mismo. Y entonces, en<br>
+                    ese preciso momento, cuando le quiero ... </p>
+                    <p class="texto2-ej4">- Orson Scott Card -</p>
+                </div>
+                <div class="seccion-arriba-foto"><img src="foto1.PNG" width="100%">
+                </div>
+            </div>
+            <div class="seccion-abajo">
+                <div style="margin-left: 15px;" class="seccion-abajo-foto">
+                    <img src="foto2.PNG" width="100%">
+                </div>
+                <div style="margin-left: 15px;" class="seccion-abajo-texto">
+                    <p>Si todo lo tomas personal, vivirás ofendido la mayor parte de tu vida, recuerda
+                    que las personas no te hacen cosas: las personas hacen cosas y tú decides si te
+                    afectan o no. </p>
+                    <p style="text-align: center;">- El Principito-</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="div-footer">
+            <div  style="
+            display: grid;
+            grid-template-columns: 30% 30% 30%;" class="css-grid">
+                <div class="footerdiv1">
+                    <p class="subtitulo">¿QUÉ HACEMOS?</p>
+                    <p class="subtitulo">Webs corporativas
+                    Desarrollo web a medida
+                    Tiendas online
+                    Marketing online
+                    Consultoria de desarrollo web
+                    </p>
+                </div>
+                <div class="footerdiv2">
+                    <p class="subtitulo">SÍGUENOS EN REDES</p>
+                    <button style="
+                    background-color: grey;
+                    background-image: url('twitter.PNG');
+                    background-size: 25px 25px;
+                    width: 30px;
+                    height: 30px;
+                    border: 3px solid white;"></button><button style="
+                    background-color: grey;
+                    background-image: url('insta.PNG');
+                    background-size: 25px 25px;
+                    width: 30px;
+                    height: 30px;
+                    border: 3px solid white;"></button ><button style="
+                    background-color: grey;
+                    background-image: url('google.PNG');
+                    background-size: 25px 25px;
+                    width: 30px;
+                    height: 30px;
+                    border: 3px solid white;"></button><button style="
+                    background-color: grey;
+                    background-image: url('linki.PNG');
+                    background-size: 25px 25px;
+                    width: 30px;
+                    height: 30px;
+                    border: 3px solid white;"></button>
+                </div>
+                <div class="footerdiv3">
+                    <p class="subtitulo">¿NOS CUENTAS TU PROYECTO</p>
+                    <P class="titulo">Ensalza: agencia de desarrollo y diseño web Madrid
+                    C/Alfonso Gomez 33. 3 28037 Madrid
+                    Tel: 91 759 91 27
+                    Mail: info@ensalza.com
+                    </P>
+                </div>
+            </div>
+        </div>
+        <div class="div-footer2">
+            <a class="aviso-legal" href="https://colegiosantamonica.eu/">Aviso legal</a> <a class="privacidad-cookies" href="https://colegiosantamonica.eu/">Privacidad y Cookies</a>
+        </div>
     </body>
 </html>

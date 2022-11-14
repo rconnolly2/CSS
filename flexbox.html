@@ -5,8 +5,30 @@
 
         </style>
     </head>
-    
-    <body>
 
+    <body>
+        <div style="display: flex; flex-direction: row;">
+            <div style="width: 100px; background-color: lightpink;">100 pixeles</div>
+            <div style="flex: 1; background-color: lightgreen;">1 flex</div>
+            <div style="flex: 3; background-color: mistyrose;">3 flex</div>
+        </div>
+
+        <!--Demostracion que flexbox es flexible-->
+        <div style="display: flex; flex-direction: row;">
+            <div style="background-color:coral">100 pixeles</div>
+            <div style="background-color:rgb(147, 207, 145)">1 flex</div>
+            <div style="background-color:gold">Hola como estas</div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; height: 70px; border: 2px solid black; justify-content: space-between;">
+            <div style="background-color:coral; width: 100px;">100 pixeles</div>
+            <div style="background-color:rgb(147, 207, 145); width: 100px;">1 flex</div>
+            <div style="background-color:gold; width: 100px;">Hola como estas</div>
+        </div>
+        <div style="display: flex; flex-direction: row; height: 70px; border: 2px solid black; justify-content: start; align-items: center;">
+            <div style="background-color:coral; width: 100px;">100 pixeles</div>
+            <div style="background-color:rgb(147, 207, 145); width: 100px;">1 flex</div>
+            <div style="background-color:gold; width: 100px;">Hola como estas</div>
+        </div>
     </body>
 </html>

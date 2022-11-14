@@ -1,0 +1,41 @@
+.descripcion-video {
+    display: block;
+}
+
+.perfil-foto {
+    display: inline-block;
+    width: 45px;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.descripcion-div {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    font-family: Roboto;
+    margin: 0;
+}
+.titulo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8;
+}
+
+.sub-titulo {
+    font-size: 13px;
+    color: #606060;
+    margin: 0;
+    margin-top: 3px;
+    vertical-align: bottom;
+}
+
+.css-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+}

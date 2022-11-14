@@ -8,8 +8,7 @@
     vertical-align: top;
     margin-top: 10px;
     margin-right: 8px;
-    border-radius: 25px;
-    overflow: hidden;
+    clip-path: circle();
 }
 
 .descripcion-div {

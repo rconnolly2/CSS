@@ -1,0 +1,98 @@
+body {
+    background-image: url("https://hersen.com/wp-content/uploads/2019/05/trabajar-el-m%C3%A1rmol.jpg");
+    padding-top: 40px;
+}
+
+.cssgrid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    height: 500px;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.cantante1 {
+    position: relative;
+}
+
+
+.cantante2 {
+    background: url("https://www.mariachielmexicano.com/pictures/mariachi_home.jpg");
+    position: relative;
+}
+
+.cantante3 {
+    background: url("https://www.mariachielmexicano.com/pictures/mariachi_home.jpg");
+    position: relative;
+}
+
+.cantante4 {
+    background: url("https://www.mariachielmexicano.com/pictures/mariachi_home.jpg");
+    position: relative;
+}
+
+/*Contenido divs*/
+.div-titulo {
+    opacity: 0.8;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 27px;
+    z-index: 2;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-family: Bebas Neue;
+    padding: 0;
+    font-size: 23px;
+    margin: 0;
+    z-index: 2;
+}
+
+.lorem {
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index: 2;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    z-index: 2;
+}
+
+.divnaranja {
+    background-color: orange;
+    width: 400px;
+    height: 284px;
+    position: absolute;
+    z-index: 0;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0.4;
+}

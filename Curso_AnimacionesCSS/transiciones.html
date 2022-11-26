@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .prueba {
+                color: red;
+                /* Lo mismo que abajo pero en muchas lineas =>
+                transition-property: font-size;
+                transition-duration: 0.5s;
+                transition-delay: 1s;
+                transition-timing-function: ease-in;
+                */
+                transition: font-size 0.5s ease-in 1s;
+                font-size: 10px;
+            }
+
+            .prueba:hover {
+                font-size: 20px;
+                letter-spacing: 10px;
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="prueba">Mi prueba</h1>
+    </body>
+</html>

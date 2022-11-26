@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div-titulo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: lightblue;
+            }
+
+            .div-menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color: lightblue;
+            }
+
+            .titulo {
+                font-family: Arial;
+                font-size: 45px;
+                margin: 0;
+                transition: color 1s ease-out;
+            }
+
+            .item-menu {
+                font-family: Arial;
+                font-size: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                transition: color, font-size 1s ease-out;
+                width: 100%;
+            }
+
+            .titulo:hover {
+                color: blue;
+            }
+
+            .item-menu:hover {
+                color: blue;
+                font-size: 2.5em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div-titulo">
+            <h1 class="titulo">THE WEBSITE!</h1>
+        </div>
+        <div class="div-menu">
+            <p class="item-menu">Home</p>
+            <p class="item-menu">About us</p>
+            <p class="item-menu">Services</p>
+            <p class="item-menu">Portfolio</p>
+            <p class="item-menu">Contact Us</p>
+        </div>
+        <img src="https://ecosistemas.ovacen.com/wp-content/uploads/2018/01/bosque.jpg" width="100%">
+    </body>
+</html>

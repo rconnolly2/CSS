@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .caja-imagen {
+                background-image: url("https://media.mallorca-touristguide.com/imagenes/132/playa%20de%20palma%2022.8.19%20-%20005.JPG");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 592px;
+                width: 0%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                /*Animacion:*/
+                animation-name: fade-imagen;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in;
+                animation-fill-mode: forwards;
+            }
+
+            .texto {
+                opacity: 0;
+                animation-name: fade-texto;
+                animation-delay: 2s;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes fade-imagen {
+                0% {
+                    width: 0%;
+                    opacity: 0.2;
+                    height: 592px;
+                    background-size: cover;
+                }
+
+                100% {
+                    width: 100%;
+                    opacity: 1;
+                    height: 592px;
+                    background-size: cover;
+                }
+            }
+
+            @keyframes fade-texto {
+                0% {
+                    opacity: 0.2;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="caja-imagen">
+            <h1 class="texto">BE THE BEST VERSION OF YOU</h1>
+        </div>
+
+    </body>
+</html>

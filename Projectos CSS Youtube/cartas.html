@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                height: 700px;
+            }
+            .cartas {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                height: 700px;
+                width: 700px;
+                background-color: blanchedalmond;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cartas div {
+                background-color: lightseagreen;
+                height: 200px;
+                width: 120px;
+                border-radius: 5px;
+                border: 1px solid black;
+                box-shadow: 1px 1px 10px black;
+            }
+
+            .carta1 {
+                z-index: 0;
+                transform: translateX(0px);
+            }
+
+            .carta2 {
+                background-color: lightsalmon !important;
+                z-index: 1;
+                transform: translateX(-30px);
+            }
+
+            .carta3 {
+                z-index: 2;
+                background-color: lightcoral !important;
+                transform: translateX(-70px);
+            }
+
+            .cartas div:hover {
+                animation-name: animacion-tarjeta;
+                animation-duration: 0.2s;
+                animation-timing-function: ease-in;
+                animation-fill-mode: forwards;
+            }
+
+            .github {
+                border-radius: 50px;
+                vertical-align: bottom;
+                margin-top: 60%;
+                margin-left: 5%;
+                display: inline-block;
+            }
+
+            .nombre {
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .nombre-git {
+                margin: 0;
+                font-size: 9px;
+                display: inline-block;
+                color: goldenrod;
+                font-weight: bold;
+            }
+
+            @keyframes animacion-tarjeta {
+                100% {
+                    margin-right: 30px;
+                    transform: translateX(-20px) translateY(-30px) rotate(10deg);
+                }
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div class="cartas">
+            <div class="carta1">
+                <h1 class="nombre">Roberto Connolly</h1>
+                <a href="https://github.com/rconnolly2"><img class="github" src="https://i.insider.com/5ba15375e361c01c008b5cf7?width=839&format=jpeg" width="25px" height="20px"></a>
+                <p class="nombre-git">@rconnolly2</p>
+            </div>
+            <div class="carta2">
+                <h1 class="nombre">Marty Connolly</h1>
+                <a href="https://github.com/rconnolly2"><img class="github" src="https://i.insider.com/5ba15375e361c01c008b5cf7?width=839&format=jpeg" width="25px" height="20px"></a>
+                <p class="nombre-git">@rconnolly2</p>
+            </div>
+            <div class="carta3">
+                <h1 class="nombre">Brandon Connolly</h1>
+                <a href="https://github.com/rconnolly2"><img class="github" src="https://i.insider.com/5ba15375e361c01c008b5cf7?width=839&format=jpeg" width="25px" height="20px"></a>
+                <p class="nombre-git">@rconnolly2</p>
+            </div>
+        </div>
+    </body>
+</html>

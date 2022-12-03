@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .caja-grande {
+            position: relative;
+            width: 100%;
+        }
+        .menu {
+            position: absolute;
+            background-color: aquamarine;
+            z-index: 0;
+            left: 0px;
+            top: 0px;
+        }
+
+        .menu2 {
+            position: absolute;
+            background-color: lightgreen;
+            z-index: 1;
+            left: 0px;
+            top: 20px;
+        }
+
+        #a {
+            background-color: lightcoral;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+
+        #b {
+            background-color: lightcoral;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        #a:hover + #b {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja-grande">
+        <div class="menu">
+            <div id="a">Opcion 1</div>
+            <div id="b">Opcion 1</div>
+            <div id="a">Opcion 1</div>
+            <div id="a">Opcion 1</div>
+
+
+        <div class="menu2">
+            <div id="b">Opcion 1</div>
+            <div id="b">Opcion 1</div>
+            <div id="b">Opcion 1</div>
+            <div id="b">Opcion 1</div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>

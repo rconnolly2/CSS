@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+                --tamaño: 50px;
+                --color: red;
+            }
+
+            .div-rojo {
+                background-color: var(--color);
+                width: var(--tamaño);
+                height: var(--tamaño);
+                position: fixed;
+                animation-name: transform;
+                animation-duration: 1.5s;
+                animation-delay: 4s;
+                animation-fill-mode: both;
+                animation-timing-function: cubic-bezier(.08, .59, .86, .09);
+            }
+
+            @keyframes transform {
+                100% {
+                    transform: scale(3);
+                }
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div class="div-rojo"></div>
+    </body>
+</html>

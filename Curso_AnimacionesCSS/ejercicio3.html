@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        body {
+            background-color: rgb(83, 82, 82);
+        }
+        .caja-roja {
+            top: 0px;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+        }
+
+        .caja-azul {
+            top: 50px;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+        }
+
+        .caja-verde {
+            top: 100px;
+            background-color: green;
+            width: 50px;
+            height: 50px;
+        }
+
+        .caja-naranja {
+            top: 150px;
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+        }
+
+        .cajas {
+            position: fixed;
+            left: 5%;
+            animation-name: animacion;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes animacion {
+            100% {
+                transform: scaleX(7) skewY(40deg) translateY(55%) translateX(55%);
+
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="cajas">
+        <div class="caja-roja"></div>
+        <div class="caja-azul"></div>
+        <div class="caja-verde"></div>
+        <div class="caja-naranja"></div>
+    </div>
+</body>
+</html>

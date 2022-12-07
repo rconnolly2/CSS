@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .contenedor {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: bisque;
+        width: 400px;
+        height: 400px;
+    }
+
+    .circulo-grande {
+        position: absolute;
+        background: conic-gradient(red, yellow, green, rgb(56, 212, 255), pink, red);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        z-index: 0;
+        border: 1px solid white;
+        animation-name: spiner-rotar;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .circulo-pequeño {
+        position: absolute;
+        background-color: bisque;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        z-index: 1;
+        border: 1px solid white;
+        box-shadow: 1px 1px 20px rgba(78, 78, 78, 0.406) inset;
+    }
+
+    /*Animaciones*/
+    @keyframes spiner-rotar {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+</head>
+
+
+<body>
+    <div class="contenedor">
+        <div class="circulo-grande"></div>
+        <div class="circulo-pequeño"></div>
+    </div>
+</body>
+
+
+</html>
